@@ -5,8 +5,8 @@ import MongoStore from 'connect-mongo';
 import cookieParser from 'cookie-parser';
 import passport from 'passport';
 import dotenv from 'dotenv';
-import authRoutes from './src/routes/auth.routes.js';
-import { initializePassport } from './src/config/passport.config.js';
+import authRoutes from './routes/auth.routes.js';
+import { initializePassport } from './config/passport.config.js';
 
 dotenv.config();
 

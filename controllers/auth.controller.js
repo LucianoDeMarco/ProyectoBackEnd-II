@@ -21,6 +21,7 @@ export const register = async (req, res) => {
         const newUser = await User.create({ firstName, lastName, email, password, role });
         res.status(201).json({ message: 'Usuario registrado con éxito', user: newUser });
     } catch (error) {
+        console.log(error)
         res.status(500).json({ error: 'Error interno del servidor' });
     }
 };
